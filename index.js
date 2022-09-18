@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 
 //Cada vez que llega una peticion cuya url empieza con /api usara esta ruta, esto nos sirve para mantener el orden y la escalabilidad, y cada recurso (products, usuarios, comerciantes, administradores, etc etc etc)
-//tengan su propia ruta, para que así por ejemplo, si me esta fallando la ruta /api/usuarios/perfil por ejemplo, sabemos donde esta el inconveniente, y no tengamos que recorrer mucho codigo para encontrarlo
+//tengan su propia ruta, para que así por ejemplo, si me esta fallando la ruta /api/usuarios/perfil por ejemplo, sabemos donde esta el inconveniente, y no tengamos que recorrer mucho código para encontrarlo
 //imaginense si todo estuviera en el archivo index.js, y una persona nueva ingresa a la empresa y ve un archivo de 550 renglones o MAS, COLAPSA! 
 app.use("/api", apiRouters);
 // recuerda poner las rutas, al final de todos los middlewares para evitar posibles conflictos.

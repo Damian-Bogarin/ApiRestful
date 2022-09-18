@@ -7,7 +7,7 @@ const Contenedor = require("../../database/class.products"); // requerimos nuest
 /*Aqui a futuro pondriamos los middlewarees a nivel del ROUTER, solo influenciaran en aquellas peticiones cuya url sea /api/products */
 
 
-//importamos con el require la clase  PSEUDOcontrollador  de la PSEUDObaseDeDatos .json (Esto ira tomando mas forma a futuro!)
+//instanciamos la variable products, para poder controlar el json. Esto seria nuestro PSEUDO controllador de base de datos, el cual ira evolucionando mas adelante!
 let products = new Contenedor('./routers/products/products.json'); //<< Usamos la palabra reservada new para crear una nueva clase en el cual le pasamos el archivo .json como parametro
 
 
